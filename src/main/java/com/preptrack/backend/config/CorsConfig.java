@@ -16,7 +16,8 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                            "https://tangerine-fairy-52eff8.netlify.app"
+                            "https://tangerine-fairy-52eff8.netlify.app",
+                            "https://preptrack-frontend-sandy.vercel.app"
                         )
                         .allowedMethods(
                             "GET", "POST", "PUT", "DELETE", "OPTIONS"
@@ -26,3 +27,4 @@ public class CorsConfig {
         };
     }
 }
+
